@@ -18,11 +18,11 @@
 }
 
 .navBar {
-	background-color: #333;
+	background-color: #b1b1b1;
 	overflow: hidden;
 	display: flex;
 	align-items: center;
-	/* justify-content: space-between; */
+	justify-content: space-between;
 	border-radius: 20px;
 	width: 80%;
 	margin: 0 auto;
@@ -32,9 +32,23 @@
 	z-index: 2;
 }
 
-.navBar h1 {
-	margin-left: 1rem;
+.navBar .links {
+	float: right;
+}
+
+.navBar a {
+	float: left;
+	color: #000;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navBar a:hover {
+	background-color: #333;
 	color: #fff;
+    transition: 0.3s;
 }
 
 p{
@@ -83,7 +97,7 @@ p{
     border-radius: 30px;
     border: none;
     box-shadow: 0px 5px 10px 1px rgb(0,0,0, 0.5);
-    background-color: #000;
+    background-color: #333;
     color: #fff;
 }
 
