@@ -4,9 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="../Assests/nova-car-logo.svg">
   <link rel="stylesheet" href="../CSS/listar.css">
+  <link rel="stylesheet" href="../CSS/modalDelete.css">
   <title>Listar carro</title>
 </head>
 
@@ -15,9 +18,9 @@
     <div class="navBar">
       <img src="../Assests/car-logo.png" alt="logo" class="logo">
       <div class="links">
-        <a href="index.html">HOME</a>
-        <a href="pages/addCarro.html">ADICIONAR</a>
-        <a href="pages/listarCarros.html">CARROS</a>
+        <a href="../index.html">HOME</a>
+        <a href="../pages/addCarro.html">ADICIONAR</a>
+        <a href="../pages/listarCarros.html">CARROS</a>
       </div>
     </div>
   </div>
@@ -42,114 +45,24 @@
             <td>R$ 820.950</td>
             <td>08/06/2024</td>
             <td>
-              <a href=""><i class="fa-solid fa-pen-to-square" style="font-size: 20px; color: #f3df04; margin-right: 10px;"></i></a>
+              <a href="../pages/editarCarro.html"><i class="fa-solid fa-pen-to-square"
+                  style="font-size: 20px; color: #f3df04; margin-right: 10px;"></i></a>
               <a href=""><i class="fa-solid fa-trash" style="font-size: 20px; color: #e30505;"></i></a>
             </td>
-
-            <!-- </tr>
-          <tr>
-            <td>Content 2</td>
-            <td>Content 2</td>
-            <td>Content 2</td>
-            <td>Content 2</td>
-            <td>Content 2</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 3</td>
-            <td>Content 3</td>
-            <td>Content 3</td>
-            <td>Content 3</td>
-            <td>Content 3</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete"">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 4</td>
-            <td>Content 4</td>
-            <td>Content 4</td>
-            <td>Content 4</td>
-            <td>Content 4</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 5</td>
-            <td>Content 5</td>
-            <td>Content 5</td>
-            <td>Content 5</td>
-            <td>Content 5</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 6</td>
-            <td>Content 6</td>
-            <td>Content 6</td>
-            <td>Content 6</td>
-            <td>Content 6</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 7</td>
-            <td>Content 7</td>
-            <td>Content 7</td>
-            <td>Content 7</td>
-            <td>Content 7</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 8</td>
-            <td>Content 8</td>
-            <td>Content 8</td>
-            <td>Content 8</td>
-            <td>Content 8</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 9</td>
-            <td>Content 9</td>
-            <td>Content 9</td>
-            <td>Content 9</td>
-            <td>Content 9</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Content 10</td>
-            <td>Content 10</td>
-            <td>Content 10</td>
-            <td>Content 10</td>
-            <td>Content 10</td>
-            <td>
-              <button class="btn-edit">editar</button>
-              <button class="btn-delete">deletar</button>
-            </td>
-          </tr> -->
         <tbody>
       </table>
     </div>
   </div>
+  <div id="deleteModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Tem certeza que deseja deletar este item?</p>
+      <button id="confirmDelete" class="confirm-btn">Confirmar</button>
+      <button id="cancelDelete" class="cancel-btn">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="../JS/modalDelete.js"></script>
 </body>
 
 </html>
